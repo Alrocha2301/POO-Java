@@ -5,8 +5,12 @@ import java.util.List;
 
 public class Compra {
 
-    Cliente cliente;
+    private Cliente cliente;
     List<Item> itens = new ArrayList<>();
+
+    void adicionarItem(String nome, double preco, int qtde) {
+        this.adicionarItem(new Item(new Produto(nome, preco), qtde));
+    }
 
     void adicionarItem(Produto produto, int quantidade) {
         this.adicionarItem(new Item(produto, quantidade));

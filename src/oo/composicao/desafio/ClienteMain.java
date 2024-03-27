@@ -4,6 +4,7 @@ public class ClienteMain {
     public static void main(String[] args) {
 
         Cliente cliente1 = new Cliente("Alexandre");
+
         Compra compra1 = new Compra(cliente1);
         var compra2 = new Compra(cliente1);
 
@@ -11,11 +12,11 @@ public class ClienteMain {
         var p2 = new Produto("Caneta", 2.5);
         var p3 = new Produto("Borracha", .8);
 
-//        System.out.print(cliente1.compras.isEmpty());
-
         compra1.adicionarItem(p1, 3);
         compra1.adicionarItem(p2, 3);
         compra1.adicionarItem(p3, 1);
+
+        compra2.adicionarItem("Lancheira", 25.9, 2);
 
         compra2.adicionarItem(p1, 9);
         compra2.adicionarItem(p2, 4);

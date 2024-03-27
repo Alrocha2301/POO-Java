@@ -33,8 +33,11 @@ public class CarroMain {
         System.out.println("Giros: " + c1.motor.giros());
         System.out.print("Está ligado? " + c1.estaLigado() + "\n");
 
+        var carro1 = new Fiesta();
 
-
+        carro1.ligar();
+        System.out.println(carro1.estaLigado());
+        System.out.println(carro1.motor.giros());
 
     }
 }
